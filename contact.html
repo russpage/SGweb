@@ -242,27 +242,29 @@
               <form action="https://submit.jotform.com/submit/261820565644056/" method="POST" aria-label="General inquiry form">
                 <input type="hidden" name="formID" value="261820565644056">
                 <input type="hidden" name="website" value="">
+                <input type="hidden" name="q2_q2_fullname0[last]" id="mirror-q2-last">
+                <input type="hidden" name="q3_q3_fullname1[first]" id="mirror-q3-first">
                 <div class="form-row">
                   <div class="form-group">
                     <label class="form-label" for="first-name">First Name <span>*</span></label>
-                    <input type="text" id="first-name" name="q9_firstName" class="form-input" required autocomplete="given-name">
+                    <input type="text" id="first-name" name="q2_q2_fullname0[first]" class="form-input" required autocomplete="given-name">
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="last-name">Last Name <span>*</span></label>
-                    <input type="text" id="last-name" name="q10_lastName" class="form-input" required autocomplete="family-name">
+                    <input type="text" id="last-name" name="q3_q3_fullname1[last]" class="form-input" required autocomplete="family-name">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="email">Email <span>*</span></label>
-                  <input type="email" id="email" name="q4_email2" class="form-input" required autocomplete="email">
+                  <input type="email" id="email" name="q4_q4_email2" class="form-input" required autocomplete="email">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="phone">Phone</label>
-                  <input type="tel" id="phone" name="q5_phone3[full]" class="form-input" autocomplete="tel">
+                  <input type="tel" id="phone" name="q5_q5_phone3[full]" class="form-input" autocomplete="tel">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="subject">What's this about?</label>
-                  <select id="subject" name="q6_dropdown4" class="form-select">
+                  <select id="subject" name="q6_q6_dropdown4" class="form-select">
                     <option value="">Choose a topic...</option>
                     <option>General Question</option>
                     <option>Catering Inquiry</option>
@@ -274,9 +276,20 @@
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="message">Message <span>*</span></label>
-                  <textarea id="message" name="q7_textarea5" class="form-textarea" required placeholder="Tell us what's on your mind..."></textarea>
+                  <textarea id="message" name="q7_q7_textarea5" class="form-textarea" required placeholder="Tell us what's on your mind..."></textarea>
                 </div>
                 <button type="submit" class="btn btn--primary form-submit">Send Message</button>
+                <script>
+                  // JotForm stores each name as a two-part field, so mirror the
+                  // visible values into the hidden counterparts before submit.
+                  (function () {
+                    var form = document.currentScript.closest('form');
+                    form.addEventListener('submit', function () {
+                      document.getElementById('mirror-q2-last').value = document.getElementById('last-name').value;
+                      document.getElementById('mirror-q3-first').value = document.getElementById('first-name').value;
+                    });
+                  })();
+                </script>
               </form>
 
           </div><!-- /.contact-form-card -->
