@@ -1,0 +1,23 @@
+---
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/tailwind.css';
+import '../data/integrity';
+const { title, head, body, bodyClass = '', chrome = true } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title set:html={title}></title>
+  <Fragment set:html={head} />
+</head>
+<body class:list={bodyClass || undefined}>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  {chrome && <SiteHeader />}
+  <Fragment set:html={body} />
+  {chrome && <SiteFooter />}
+  <script is:inline src="js/main.js"></script>
+</body>
+</html>
