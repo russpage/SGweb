@@ -1,0 +1,294 @@
+<!-- ===================== NAV ===================== -->
+  <main id="main-content">
+
+    <h1 class="sr-only">Snelgrove Ice Cream — Handcrafted in Utah since 1929</h1>
+
+    <!-- ===================== HERO ===================== -->
+    <!--
+      PROMO SYSTEM: To change the hero promotion, update the hero__promo block below.
+      Options:
+        1. Seasonal message: Update text and link in hero__promo
+        2. Product feature: Swap hero image in hero__product-col
+        3. Event banner: Add/replace the hero__promo block
+      To hide the promo banner, add style="display:none" to .hero__promo
+    -->
+    <section class="hero hero-slider hero-banner-slider" aria-label="Hero" aria-roledescription="carousel">
+
+      <!-- Slide 1 — Fall Flavors (Coconut Horchata, Pumpkin Pie, Apple Pie a la Mode) -->
+      <div class="hero-slider__slide is-active" role="group" aria-roledescription="slide" aria-label="Slide 1 of 2">
+        <a href="flavors.html" aria-label="Fall flavors are here — Coconut Horchata, Pumpkin Pie, and Apple Pie a la Mode. See our seasonal flavors.">
+          <img src="images/fall-flavors-hero.webp"
+               alt="Fall flavors are here — Coconut Horchata, Pumpkin Pie, and Apple Pie a la Mode">
+        </a>
+      </div>
+
+      <!-- Slide 2 — Make it a Snelgrove Celebration -->
+      <div class="hero-slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 2">
+        <img src="images/celebration-hero.webp"
+             alt="Make it a Snelgrove Celebration — classic ice cream for birthdays, ballgames, family nights, and office wins">
+      </div>
+
+      <button class="hero-slider__arrow hero-slider__arrow--prev" aria-label="Previous slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="hero-slider__arrow hero-slider__arrow--next" aria-label="Next slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <button class="hero-slider__pause" aria-label="Pause slideshow" aria-pressed="false">
+        <svg class="hero-slider__pause-icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        <svg class="hero-slider__pause-icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" hidden><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </section>
+
+
+    <!-- ===================== FEATURE STRIP ===================== -->
+    <div class="features-strip">
+      <div class="container">
+        <div class="features-strip__inner">
+          <div class="features-strip__item">
+            <svg class="features-strip__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9 L12 2 L17 9 Z"/><path d="M7 9 L12 22 L17 9"/><line x1="9" y1="13" x2="15" y2="13"/></svg>
+            <span>Made Fresh in Small Batches</span>
+          </div>
+          <div class="features-strip__item">
+            <svg class="features-strip__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96a1 1 0 0 1 1.6.7c.05.78.18 2.5.41 4.34"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/><path d="M22 9c-1.5 4-4.5 6-9 7"/></svg>
+            <span>Quality Ingredients</span>
+          </div>
+          <div class="features-strip__item">
+            <svg class="features-strip__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9-9.5C1 7 5 3 9 5c1.5.7 2.5 2 3 3 .5-1 1.5-2.3 3-3 4-2 8 2 6 6.5-2 5-9 9.5-9 9.5z"/></svg>
+            <span>No Artificial Colors or Flavors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== FEATURED FLAVORS ===================== -->
+    <section class="section featured-flavors" aria-labelledby="flavors-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center" data-animate="fade-up">
+          <span class="section-label">Start with the classics</span>
+          <h2 class="section-title" id="flavors-heading">
+            Flavors people <em style="font-style:italic;color:var(--color-cherry)">come back</em> for
+          </h2>
+          <p class="section-subtitle">
+            Burnt Almond Fudge. Canadian Vanilla. Caramel Cashew. Malted Milk.
+            The 1929 Legacy Flight starts here.
+          </p>
+        </header>
+
+        <div class="flavors-grid">
+
+          <article class="flavor-card" data-animate="fade-up" data-delay="100">
+            <div class="flavor-card__img-wrap">
+              <img src="images/flavors/burnt-almond-fudge.jpg" alt="Burnt Almond Fudge ice cream" class="flavor-card__img"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="flavor-card__emoji" style="display:none" aria-hidden="true">BAF</div>
+              <div class="flavor-card__badge"><span class="tag tag--gold">Classic</span></div>
+            </div>
+            <div class="flavor-card__body">
+              <h3 class="flavor-card__name">Burnt Almond Fudge</h3>
+              <p class="flavor-card__desc">The flavor that built a legacy. Velvety chocolate fudge ice cream swirled with hand-toasted almonds.</p>
+            </div>
+          </article>
+
+          <article class="flavor-card" data-animate="fade-up" data-delay="200">
+            <div class="flavor-card__img-wrap">
+              <img src="images/flavors/canadian-vanilla.jpg" alt="Canadian Vanilla ice cream" class="flavor-card__img"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="flavor-card__emoji" style="display:none" aria-hidden="true">CV</div>
+              <div class="flavor-card__badge"><span class="tag tag--gold">Classic</span></div>
+            </div>
+            <div class="flavor-card__body">
+              <h3 class="flavor-card__name">Canadian Vanilla</h3>
+              <p class="flavor-card__desc">Laird Snelgrove's secret recipe from Canada. Impossibly rich, impossibly smooth. The gold standard of vanilla.</p>
+            </div>
+          </article>
+
+          <article class="flavor-card" data-animate="fade-up" data-delay="300">
+            <div class="flavor-card__img-wrap">
+              <img src="images/flavors/caramel-cashew.jpg" alt="Caramel Cashew ice cream" class="flavor-card__img"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="flavor-card__emoji" style="display:none" aria-hidden="true">CC</div>
+              <div class="flavor-card__badge"><span class="tag tag--brown">Fan Favorite</span></div>
+            </div>
+            <div class="flavor-card__body">
+              <h3 class="flavor-card__name">Caramel Cashew</h3>
+              <p class="flavor-card__desc">Buttery caramel ice cream loaded with whole roasted cashews. Sweet, salty, and completely irresistible.</p>
+            </div>
+          </article>
+
+          <article class="flavor-card" data-animate="fade-up" data-delay="400">
+            <div class="flavor-card__img-wrap">
+              <img src="images/flavors/mint-brownie.jpg" alt="Mint Brownie ice cream" class="flavor-card__img"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="flavor-card__emoji" style="display:none" aria-hidden="true">MB</div>
+              <div class="flavor-card__badge"><span class="tag tag--red">Fan Favorite</span></div>
+            </div>
+            <div class="flavor-card__body">
+              <h3 class="flavor-card__name">Mint Brownie</h3>
+              <p class="flavor-card__desc">Cool peppermint ice cream layered with fudgy brownie pieces. Fresh, rich, and utterly indulgent.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top: var(--space-10);" data-animate="fade-up">
+          <a href="flavors.html" class="btn btn--primary">See All Flavors</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== HERITAGE BANNER ===================== -->
+    <section class="section--lg heritage-banner texture-overlay" aria-labelledby="heritage-heading">
+      <div class="heritage-banner__pattern"></div>
+      <div class="container">
+        <div class="heritage-banner__inner">
+
+          <div class="heritage-banner__text">
+            <span class="heritage-banner__label" data-animate="fade-up">Our Heritage</span>
+            <h2 class="heritage-banner__title" id="heritage-heading" data-animate="fade-up" data-delay="100">
+              A Nickel Cone<br>That Changed<br>Everything.
+            </h2>
+            <p class="heritage-banner__body" data-animate="fade-up" data-delay="200">
+              In 1929, Charles Rich Snelgrove set out to create something special — "artistry
+              in pleasure foods." During one of America's toughest times, he crafted ice cream
+              as an affordable luxury: a nickel cone that could bring families together, share
+              laughter, and offer a taste of hope.
+            </p>
+            <p class="heritage-banner__body" data-animate="fade-up" data-delay="250">
+              Nearly a century later, his great granddaughter Lyndsay is carrying the torch —
+              bringing those same classic flavors back, one scoop at a time.
+            </p>
+
+            <div class="heritage-banner__stats" data-animate="fade-up" data-delay="300">
+              <div class="stat">
+                <div class="stat__number">1929</div>
+                <div class="stat__label">Year Founded</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">95+</div>
+                <div class="stat__label">Years of Joy</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">20+</div>
+                <div class="stat__label">Flavors</div>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--space-8);" data-animate="fade-up" data-delay="400">
+              <a href="story.html" class="btn btn--gold">Read Our Story</a>
+            </div>
+          </div>
+
+          <div class="heritage-banner__image-col" data-animate="fade-right" data-delay="200">
+            <img src="images/snelgrove-storefront-vintage.webp" alt="Historic Snelgrove &quot;Distinctive&quot; Ice Cream storefront — As Fine As The Art Can Produce" class="heritage-banner__img"
+                 onerror="this.style.display='none'">
+          </div>
+
+        </div>
+      </div>
+      <!-- Large decorative year -->
+      <div class="heritage-banner__year" aria-hidden="true">1929</div>
+    </section>
+
+    <!-- ===================== GROCERY BAND ===================== -->
+    <section class="grocery-band" aria-labelledby="grocery-heading">
+      <div class="container">
+        <h2 class="grocery-band__title" id="grocery-heading" data-animate="fade-up">
+          Can't Make It to the Shop?
+        </h2>
+        <p class="grocery-band__sub" data-animate="fade-up" data-delay="100">
+          Find Snelgrove pints in grocery stores across the Wasatch Front.
+        </p>
+        <div style="display:flex; gap:var(--space-4); justify-content:center; flex-wrap:wrap;" data-animate="fade-up" data-delay="200">
+          <a href="locations.html#grocery" class="btn btn--primary">Find In-Store</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRESS / QUOTES ===================== -->
+    <section class="section press-section" aria-labelledby="press-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center" data-animate="fade-up">
+          <span class="section-label">As Seen In</span>
+          <h2 class="section-title" id="press-heading">America Loves Snelgrove</h2>
+        </header>
+
+        <!-- Press logo bar -->
+        <div class="press-logos" data-animate="fade-in">
+          <span class="press-logo">KSL TV</span>
+          <span class="press-logo">Fox 13</span>
+          <span class="press-logo">Salt Lake Tribune</span>
+          <span class="press-logo">Atlas Obscura</span>
+          <span class="press-logo">Utah's Adventure Family</span>
+        </div>
+
+        <!-- Quotes -->
+        <div class="quote-grid">
+          <blockquote class="quote-card" data-animate="fade-up" data-delay="100">
+            <span class="quote-card__mark">"</span>
+            <p class="quote-card__text">
+              Snelgrove is more than ice cream — it's a piece of Utah history.
+              The brand's return feels like welcoming back an old friend.
+            </p>
+            <footer>
+              <p class="quote-card__author">KSL TV</p>
+              <p class="quote-card__source">Salt Lake City, UT</p>
+            </footer>
+          </blockquote>
+
+          <blockquote class="quote-card" data-animate="fade-up" data-delay="200">
+            <span class="quote-card__mark">"</span>
+            <p class="quote-card__text">
+              That iconic double cone sign was such a landmark — when the
+              2002 Winter Olympics came to Salt Lake, it was on the pin.
+            </p>
+            <footer>
+              <p class="quote-card__author">Atlas Obscura</p>
+              <p class="quote-card__source">Snelgrove Ice Cream Cone</p>
+            </footer>
+          </blockquote>
+
+          <blockquote class="quote-card" data-animate="fade-up" data-delay="300">
+            <span class="quote-card__mark">"</span>
+            <p class="quote-card__text">
+              Lyndsay Snelgrove is bringing those classic flavors back, and
+              Burnt Almond Fudge is just as magical as we remembered.
+            </p>
+            <footer>
+              <p class="quote-card__author">Fox 13 News</p>
+              <p class="quote-card__source">Northern Utah</p>
+            </footer>
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== ORDER ONLINE (Toast) ===================== -->
+    <section class="section newsletter" aria-labelledby="order-heading">
+      <div class="container">
+        <h2 class="newsletter__title" id="order-heading" data-animate="fade-up">
+          Skip the Line
+        </h2>
+        <p class="newsletter__sub" data-animate="fade-up" data-delay="100">
+          Order ahead for pickup &mdash; your scoops will be ready when you are.
+        </p>
+        <div data-animate="fade-up" data-delay="200" style="display:flex; justify-content:center;">
+          <a href="https://order.toasttab.com/online/locations/76d7bc89-0d8b-4123-a397-d2c94ad9ad51/default"
+             target="_blank" rel="noopener"
+             class="btn btn--gold" style="font-size:var(--text-base); padding:var(--space-4) var(--space-10);">
+            Order Online
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>

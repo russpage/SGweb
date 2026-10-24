@@ -1,0 +1,85 @@
+<meta name="description" content="Contact Snelgrove Ice Cream — get in touch, ask about catering, or just say hello.">
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Contact — Snelgrove Ice Cream">
+  <meta property="og:description" content="Contact Snelgrove Ice Cream — get in touch, ask about catering, or just say hello.">
+  <meta property="og:image"       content="https://www.snelgroveicecream.com/images/og-default.jpg">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.snelgroveicecream.com/contact.html">
+
+  
+  <link rel="icon" type="image/png" href="images/favicon-cone.png">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .contact-page { background: var(--color-vanilla); }
+
+    /* Form layout */
+    .contact-section {
+      display: grid; grid-template-columns: 1fr 1.5fr;
+      gap: var(--space-16); align-items: start;
+    }
+
+    /* Info sidebar */
+    .contact-info__title {
+      font-family: var(--font-display); font-size: var(--text-3xl);
+      font-weight: 900; color: var(--color-blueberry); margin-bottom: var(--space-6);
+    }
+    .contact-info-item {
+      display: flex; gap: var(--space-4); margin-bottom: var(--space-6);
+    }
+    .contact-info-item__icon-wrap {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--color-cherry-light); display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; color: var(--color-cherry);
+    }
+    .contact-info-item__label {
+      font-size: var(--text-xs); font-weight: 900; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--color-cherry); margin-bottom: var(--space-1);
+    }
+    .contact-info-item__value {
+      font-size: var(--text-base); color: var(--color-text); line-height: 1.6;
+    }
+    .contact-info-item__value a { color: var(--color-cherry); }
+
+    /* Form card */
+    .contact-form-card {
+      background: var(--color-white); border-radius: var(--radius-xl);
+      padding: var(--space-8); box-shadow: var(--shadow-lg);
+    }
+    .contact-form-card__title {
+      font-family: var(--font-display); font-size: var(--text-2xl);
+      font-weight: 700; color: var(--color-blueberry); margin-bottom: var(--space-6);
+    }
+
+    /* Form fields */
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+    .form-group { margin-bottom: var(--space-5); }
+    .form-label {
+      display: block; font-size: var(--text-sm); font-weight: 700;
+      color: var(--color-blueberry); margin-bottom: var(--space-2);
+    }
+    .form-label span { color: var(--color-cherry); }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: var(--space-3) var(--space-4);
+      border: 2px solid var(--color-melted); border-radius: var(--radius-md);
+      background: var(--color-vanilla); color: var(--color-blueberry);
+      font-family: var(--font-body); font-size: var(--text-base);
+      transition: border-color var(--transition-fast);
+      outline: none; appearance: none;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--color-cherry); background: var(--color-white);
+    }
+    .form-textarea { resize: vertical; min-height: 130px; }
+    .form-select { cursor: pointer; }
+    .form-submit { width: 100%; padding-block: var(--space-4); font-size: var(--text-base); margin-top: var(--space-2); }
+
+    @media (max-width: 900px) {
+      .contact-section { grid-template-columns: 1fr; gap: var(--space-8); }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>

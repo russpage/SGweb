@@ -1,0 +1,122 @@
+<meta name="description" content="Join the Snelgrove Ice Cream team — careers and job opportunities at Utah's favorite ice cream shop since 1929.">
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Careers — Snelgrove Ice Cream">
+  <meta property="og:description" content="Join the Snelgrove Ice Cream team — careers and job opportunities at Utah&#x27;s favorite ice cream shop since 1929.">
+  <meta property="og:image"       content="https://www.snelgroveicecream.com/images/og-default.jpg">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.snelgroveicecream.com/careers.html">
+
+  
+  <link rel="icon" type="image/png" href="images/favicon-cone.png">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .careers-page { background: var(--color-vanilla); }
+
+    /* Intro */
+    .careers-intro {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-12); align-items: center;
+    }
+    .careers-intro__title {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+      font-weight: 900; color: var(--color-blueberry);
+      margin-bottom: var(--space-5); line-height: 1.1;
+    }
+    .careers-intro__body {
+      font-size: var(--text-lg); color: var(--color-text-mid);
+      line-height: 1.8; margin-bottom: var(--space-6); max-width: 55ch;
+    }
+    .careers-intro__img {
+      border-radius: var(--radius-xl); width: 100%; object-fit: cover;
+    }
+    .careers-intro__img-placeholder {
+      border-radius: var(--radius-xl); aspect-ratio: 4/3;
+      background: var(--color-candy-pink); opacity: .4;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* Perks */
+    .perks-section { background: var(--color-melted); }
+    .perks-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-8); margin-top: var(--space-10);
+    }
+    .perk-card {
+      background: var(--color-white); border-radius: var(--radius-xl);
+      padding: var(--space-8); box-shadow: var(--shadow-md); text-align: center;
+      transition: box-shadow var(--transition-base), transform var(--transition-base);
+    }
+    .perk-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .perk-card__icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--color-cherry-light, #FCE9E5);
+      color: var(--color-cherry);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto var(--space-4);
+    }
+    .perk-card__icon svg { width: 32px; height: 32px; }
+    .perk-card__title {
+      font-family: var(--font-display); font-size: var(--text-xl);
+      font-weight: 700; color: var(--color-blueberry); margin-bottom: var(--space-3);
+    }
+    .perk-card__desc {
+      font-size: var(--text-sm); color: var(--color-text-mid); line-height: 1.7;
+    }
+
+    /* Application Form */
+    .apply-section { background: var(--color-vanilla); }
+    .apply-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr;
+      gap: var(--space-12); align-items: start;
+    }
+    .apply-info__title {
+      font-family: var(--font-display); font-size: var(--text-3xl);
+      font-weight: 900; color: var(--color-blueberry); margin-bottom: var(--space-5);
+    }
+    .apply-info__body {
+      font-size: var(--text-base); color: var(--color-text-mid);
+      line-height: 1.8; margin-bottom: var(--space-6);
+    }
+    .apply-form-card {
+      background: var(--color-white); border-radius: var(--radius-xl);
+      padding: var(--space-8); box-shadow: var(--shadow-lg);
+    }
+    .apply-form-card__title {
+      font-family: var(--font-display); font-size: var(--text-2xl);
+      font-weight: 700; color: var(--color-blueberry); margin-bottom: var(--space-6);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+    .form-group { margin-bottom: var(--space-5); }
+    .form-label {
+      display: block; font-size: var(--text-sm); font-weight: 700;
+      color: var(--color-blueberry); margin-bottom: var(--space-2);
+    }
+    .form-label span { color: var(--color-cherry); }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: var(--space-3) var(--space-4);
+      border: 2px solid var(--color-melted); border-radius: var(--radius-md);
+      background: var(--color-vanilla); color: var(--color-blueberry);
+      font-family: var(--font-body); font-size: var(--text-base);
+      transition: border-color var(--transition-fast);
+      outline: none; appearance: none;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--color-cherry); background: var(--color-white);
+    }
+    .form-textarea { resize: vertical; min-height: 130px; }
+    .form-select { cursor: pointer; }
+    .form-submit { width: 100%; padding-block: var(--space-4); font-size: var(--text-base); margin-top: var(--space-2); }
+
+    @media (max-width: 900px) {
+      .careers-intro { grid-template-columns: 1fr; gap: var(--space-8); }
+      .perks-grid { grid-template-columns: 1fr; }
+      .apply-grid { grid-template-columns: 1fr; gap: var(--space-8); }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
