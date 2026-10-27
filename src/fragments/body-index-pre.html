@@ -1,0 +1,78 @@
+<!-- ===================== NAV ===================== -->
+  <main id="main-content">
+
+    <h1 class="sr-only">Snelgrove Ice Cream — Handcrafted in Utah since 1929</h1>
+
+    <!-- ===================== HERO ===================== -->
+    <!--
+      PROMO SYSTEM: To change the hero promotion, update the hero__promo block below.
+      Options:
+        1. Seasonal message: Update text and link in hero__promo
+        2. Product feature: Swap hero image in hero__product-col
+        3. Event banner: Add/replace the hero__promo block
+      To hide the promo banner, add style="display:none" to .hero__promo
+    -->
+    <section class="hero hero-slider hero-banner-slider" aria-label="Hero" aria-roledescription="carousel">
+
+      <!-- Slide 1 — Fall Flavors (Coconut Horchata, Pumpkin Pie, Apple Pie a la Mode) -->
+      <div class="hero-slider__slide is-active" role="group" aria-roledescription="slide" aria-label="Slide 1 of 2">
+        <a href="flavors.html" aria-label="Fall flavors are here — Coconut Horchata, Pumpkin Pie, and Apple Pie a la Mode. See our seasonal flavors.">
+          <img src="images/fall-flavors-hero.webp"
+               alt="Fall flavors are here — Coconut Horchata, Pumpkin Pie, and Apple Pie a la Mode">
+        </a>
+      </div>
+
+      <!-- Slide 2 — Make it a Snelgrove Celebration -->
+      <div class="hero-slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 2">
+        <img src="images/celebration-hero.webp"
+             alt="Make it a Snelgrove Celebration — classic ice cream for birthdays, ballgames, family nights, and office wins">
+      </div>
+
+      <button class="hero-slider__arrow hero-slider__arrow--prev" aria-label="Previous slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="hero-slider__arrow hero-slider__arrow--next" aria-label="Next slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <button class="hero-slider__pause" aria-label="Pause slideshow" aria-pressed="false">
+        <svg class="hero-slider__pause-icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        <svg class="hero-slider__pause-icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" hidden><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </section>
+
+
+    <!-- ===================== FEATURE STRIP ===================== -->
+    <div class="features-strip">
+      <div class="container">
+        <div class="features-strip__inner">
+          <div class="features-strip__item">
+            <svg class="features-strip__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9 L12 2 L17 9 Z"/><path d="M7 9 L12 22 L17 9"/><line x1="9" y1="13" x2="15" y2="13"/></svg>
+            <span>Made Fresh in Small Batches</span>
+          </div>
+          <div class="features-strip__item">
+            <svg class="features-strip__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96a1 1 0 0 1 1.6.7c.05.78.18 2.5.41 4.34"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/><path d="M22 9c-1.5 4-4.5 6-9 7"/></svg>
+            <span>Quality Ingredients</span>
+          </div>
+          <div class="features-strip__item">
+            <svg class="features-strip__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9-9.5C1 7 5 3 9 5c1.5.7 2.5 2 3 3 .5-1 1.5-2.3 3-3 4-2 8 2 6 6.5-2 5-9 9.5-9 9.5z"/></svg>
+            <span>No Artificial Colors or Flavors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== FEATURED FLAVORS ===================== -->
+    <section class="section featured-flavors" aria-labelledby="flavors-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center" data-animate="fade-up">
+          <span class="section-label">Start with the classics</span>
+          <h2 class="section-title" id="flavors-heading">
+            Flavors people <em style="font-style:italic;color:var(--color-cherry)">come back</em> for
+          </h2>
+          <p class="section-subtitle">
+            __HOME_FLAVORS_SUBTITLE__
+          </p>
+        </header>
+
+        <div class="flavors-grid">

@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import head from '../fragments/head-menu.html?raw';
-import body from '../fragments/body-menu.html?raw';
+import pre from '../fragments/body-menu-pre.html?raw';
+import post from '../fragments/body-menu-post.html?raw';
+import data from '../data/flavors.json';
 ---
-<BaseLayout title={`Menu — Snelgrove Ice Cream`} head={head} body={body} bodyClass={``} />
+<BaseLayout title={`Menu — Snelgrove Ice Cream`} head={head} bodyClass={``}>
+  <Fragment set:html={pre} />
+  {data.scoops.map((f) => <span class="menu-addon-pill--gold menu-addon-pill">{f.menuName ?? f.name}</span>)}
+  <Fragment set:html={post} />
+</BaseLayout>

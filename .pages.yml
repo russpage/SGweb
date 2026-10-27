@@ -1,0 +1,131 @@
+media:
+  input: public/images
+  output: images
+
+content:
+  - name: flavors
+    label: Ice Cream Flavors
+    type: file
+    path: src/data/flavors.json
+    format: json
+    fields:
+      - name: seasonal
+        label: Seasonal Lineup
+        type: object
+        fields:
+          - name: label
+            label: Season banner (e.g. "Limited Time · Fall 2026")
+            type: string
+            required: true
+          - name: flavors
+            label: Seasonal flavors
+            type: object
+            list: true
+            fields:
+              - name: name
+                label: Name
+                type: string
+                required: true
+              - name: description
+                label: Description
+                type: text
+                required: true
+              - name: image
+                label: Photo
+                type: image
+              - name: tag
+                label: Tag on photo (e.g. "Seasonal" or "Dairy Free · Seasonal")
+                type: string
+                default: Seasonal
+      - name: scoops
+        label: "Scoop flavors (shown on Flavors page and Menu)"
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: menuName
+            label: Short name for the Menu page (optional)
+            type: string
+          - name: description
+            label: Description
+            type: text
+            required: true
+          - name: image
+            label: Photo
+            type: image
+          - name: categories
+            label: Filter categories (space-separated, e.g. "classic nutty")
+            type: string
+            default: classic
+          - name: badges
+            label: Badges
+            type: object
+            list: true
+            fields:
+              - name: style
+                label: Color
+                type: select
+                options:
+                  values:
+                    - value: gold
+                      label: Gold (Classic)
+                    - value: red
+                      label: Red (New)
+                    - value: brown
+                      label: Brown (Fan Fave)
+                    - value: seasonal
+                      label: Seasonal
+                    - value: pint
+                      label: Pint
+                    - value: dairyfree
+                      label: Green (Dairy Free)
+              - name: label
+                label: Text
+                type: string
+          - name: anchor
+            label: Link anchor id (leave blank unless a page links here)
+            type: string
+      - name: featured
+        label: "Home page: featured flavor cards"
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: description
+            label: Description (short, for the home page)
+            type: text
+            required: true
+          - name: image
+            label: Photo
+            type: image
+          - name: initials
+            label: Fallback initials if photo missing (e.g. "BAF")
+            type: string
+          - name: badgeStyle
+            label: Badge color
+            type: select
+            options:
+              values:
+                - value: gold
+                  label: Gold (Classic)
+                - value: red
+                  label: Red
+                - value: brown
+                  label: Brown
+          - name: badgeLabel
+            label: Badge text
+            type: string
+      - name: home
+        label: Home page text
+        type: object
+        fields:
+          - name: subtitle
+            label: Featured-flavors intro sentence
+            type: text
+            required: true

@@ -1,0 +1,15 @@
+---
+const { flavor, delay } = Astro.props;
+---
+<article class="flavor-card-full" data-category={flavor.categories} data-animate="fade-up" data-delay={delay} id={flavor.anchor}>
+  <div class="flavor-card-full__img-wrap">
+    <img src={flavor.image} alt={flavor.alt ?? flavor.name} class="flavor-card-full__img">
+    {flavor.badges?.length > 0 && (
+      <div class="flavor-card-full__badges">{flavor.badges.map((b) => <span class={`tag tag--${b.style}`}>{b.label}</span>)}</div>
+    )}
+  </div>
+  <div class="flavor-card-full__body">
+    <h3 class="flavor-card-full__name">{flavor.name}</h3>
+    <p class="flavor-card-full__desc">{flavor.description}</p>
+  </div>
+</article>

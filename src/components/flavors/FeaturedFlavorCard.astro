@@ -1,0 +1,15 @@
+---
+const { flavor, delay } = Astro.props;
+---
+<article class="flavor-card" data-animate="fade-up" data-delay={delay}>
+  <div class="flavor-card__img-wrap">
+    <img src={flavor.image} alt={flavor.alt ?? `${flavor.name} ice cream`} class="flavor-card__img"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+    <div class="flavor-card__emoji" style="display:none" aria-hidden="true">{flavor.initials}</div>
+    <div class="flavor-card__badge"><span class={`tag tag--${flavor.badgeStyle}`}>{flavor.badgeLabel}</span></div>
+  </div>
+  <div class="flavor-card__body">
+    <h3 class="flavor-card__name">{flavor.name}</h3>
+    <p class="flavor-card__desc">{flavor.description}</p>
+  </div>
+</article>

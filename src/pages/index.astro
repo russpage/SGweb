@@ -1,6 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import FeaturedFlavorCard from '../components/flavors/FeaturedFlavorCard.astro';
 import head from '../fragments/head-index.html?raw';
-import body from '../fragments/body-index.html?raw';
+import preRaw from '../fragments/body-index-pre.html?raw';
+import post from '../fragments/body-index-post.html?raw';
+import data from '../data/flavors.json';
+const pre = preRaw.replace('__HOME_FLAVORS_SUBTITLE__', data.home.subtitle);
 ---
-<BaseLayout title={`Snelgrove Ice Cream — Make it a Snelgrove Celebration | Est. 1929`} head={head} body={body} bodyClass={``} />
+<BaseLayout title={`Snelgrove Ice Cream — Make it a Snelgrove Celebration | Est. 1929`} head={head} bodyClass={``}>
+  <Fragment set:html={pre} />
+  {data.featured.map((f, i) => <FeaturedFlavorCard flavor={f} delay={(i + 1) * 100} />)}
+  <Fragment set:html={post} />
+</BaseLayout>

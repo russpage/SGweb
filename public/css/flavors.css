@@ -396,3 +396,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Dairy-free badge (was an inline style before the CMS refactor) */
+.tag--dairyfree {
+  background: #A7F3D0;
+  color: #065F46;
+}

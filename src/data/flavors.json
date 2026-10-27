@@ -1,0 +1,405 @@
+{
+  "home": {
+    "subtitle": "Burnt Almond Fudge. Canadian Vanilla. Caramel Cashew. Malted Milk. The 1929 Legacy Flight starts here."
+  },
+  "seasonal": {
+    "label": "Limited Time · Fall 2026",
+    "flavors": [
+      {
+        "name": "Apple Pie a la Mode",
+        "description": "Apple pie ice cream seasoned with cinnamon and sprinkled with chunks of graham cracker pie crust.",
+        "image": "images/flavors/apple-pie-a-la-mode.webp",
+        "tag": "Seasonal"
+      },
+      {
+        "name": "Pumpkin Pie",
+        "description": "Creamy pumpkin spice ice cream swirled with warm cinnamon and nutmeg, packed with crunchy Biscoff cookie pieces for a buttery, spiced finish.",
+        "image": "images/flavors/pumpkin-pie.webp",
+        "tag": "Seasonal"
+      },
+      {
+        "name": "Coconut Horchata",
+        "description": "Dairy-free coconut horchata ice cream infused with cinnamon and vanilla, delivering a rich, refreshing twist on the classic Mexican favorite.",
+        "image": "images/flavors/coconut-horchata.webp",
+        "tag": "Dairy Free · Seasonal"
+      }
+    ]
+  },
+  "scoops": [
+    {
+      "name": "Bear Lake Raspberry",
+      "description": "Made with real Bear Lake raspberries — bright, tart, and bursting with fresh fruit flavor. A Utah favorite.",
+      "image": "images/flavors/bear-lake-raspberry.jpg",
+      "alt": "Bear Lake Raspberry",
+      "categories": "fruit",
+      "badges": [
+        {
+          "style": "seasonal",
+          "label": "Seasonal"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ]
+    },
+    {
+      "name": "Birthday Cake",
+      "description": "Festive vanilla cake batter ice cream loaded with rainbow sprinkles and frosting swirls. Every day is a celebration.",
+      "image": "images/flavors/birthday-cake.jpg",
+      "alt": "Birthday Cake",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        }
+      ]
+    },
+    {
+      "name": "Bluey",
+      "description": "A vibrant blue vanilla ice cream that's as fun to look at as it is to eat. A kid favorite.",
+      "image": "images/flavors/bluey.jpg",
+      "alt": "Bluey",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        }
+      ]
+    },
+    {
+      "name": "Brown Sugar Cookie Dough",
+      "description": "Rich brown sugar ice cream loaded with chunks of buttery cookie dough. Warm, sweet, and irresistible.",
+      "image": "images/flavors/brown-sugar-cookie-dough.jpg",
+      "alt": "Brown Sugar Cookie Dough",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        }
+      ]
+    },
+    {
+      "name": "Burnt Almond Fudge",
+      "description": "The flavor that built a legacy. Velvety chocolate fudge ice cream swirled with hand-toasted almonds. A Snelgrove original since day one.",
+      "image": "images/flavors/burnt-almond-fudge.jpg",
+      "alt": "Burnt Almond Fudge",
+      "categories": "classic nutty chocolate",
+      "badges": [
+        {
+          "style": "gold",
+          "label": "Classic"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ],
+      "anchor": "burnt-almond-fudge"
+    },
+    {
+      "name": "Canadian Vanilla",
+      "description": "Laird Snelgrove's secret recipe, acquired from a Canadian contact and kept close ever since. Impossibly rich, impossibly smooth.",
+      "image": "images/flavors/canadian-vanilla.jpg",
+      "alt": "Canadian Vanilla",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "gold",
+          "label": "Classic"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ],
+      "anchor": "canadian-vanilla"
+    },
+    {
+      "name": "Caramel Cashew",
+      "description": "Buttery caramel ice cream loaded with whole roasted cashews. Sweet, salty, and completely irresistible.",
+      "image": "images/flavors/caramel-cashew.jpg",
+      "alt": "Caramel Cashew",
+      "categories": "classic nutty",
+      "badges": [
+        {
+          "style": "brown",
+          "label": "Fan Fave"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ],
+      "anchor": "caramel-cashew"
+    },
+    {
+      "name": "\"Charles Rich\" Chocolate",
+      "description": "Named for our founder — a deep, pure chocolate ice cream made the way Charles would have wanted it.",
+      "image": "images/flavors/chocolate.jpg",
+      "alt": "Charles Rich Chocolate",
+      "categories": "chocolate",
+      "badges": [
+        {
+          "style": "gold",
+          "label": "Classic"
+        }
+      ],
+      "menuName": "Chocolate"
+    },
+    {
+      "name": "Coconut Chocolate",
+      "description": "Rich chocolate ice cream made with real coconut cream. Dairy-free, but you'd never know it.",
+      "image": "images/flavors/coconut-chocolate.jpg",
+      "alt": "Coconut Chocolate",
+      "categories": "chocolate",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        },
+        {
+          "style": "dairyfree",
+          "label": "Dairy Free"
+        }
+      ]
+    },
+    {
+      "name": "Cookie Butter Biscoff",
+      "description": "Creamy cookie butter ice cream swirled with crushed Biscoff cookies. Sweet, spiced, and totally addictive.",
+      "image": "images/flavors/cookie-butter-biscoff.jpg",
+      "alt": "Cookie Butter Biscoff",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ]
+    },
+    {
+      "name": "Cookies & Cream",
+      "description": "Creamy vanilla ice cream loaded with generous chunks of chocolate cookie. A forever classic.",
+      "image": "images/flavors/cookies-and-cream.jpg",
+      "alt": "Cookies and Cream",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ]
+    },
+    {
+      "name": "Cotton Candy",
+      "description": "Sweet, whimsical cotton candy flavored ice cream in swirls of pink and blue. Pure carnival fun.",
+      "image": "images/flavors/cotton-candy.jpg",
+      "alt": "Cotton Candy",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        }
+      ]
+    },
+    {
+      "name": "Fresh Strawberry",
+      "description": "Bright, fresh strawberry ice cream made with real fruit. Light, summery, and refreshing.",
+      "image": "images/flavors/strawberry.jpg",
+      "alt": "Fresh Strawberry",
+      "categories": "fruit",
+      "badges": [
+        {
+          "style": "seasonal",
+          "label": "Seasonal"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ],
+      "menuName": "Strawberry"
+    },
+    {
+      "name": "Malted Milk",
+      "description": "A nostalgic old-fashioned malt shop flavor — creamy, smooth, and wonderfully retro. Like a milkshake in a pint.",
+      "image": "images/flavors/malted-milk.jpg",
+      "alt": "Malted Milk",
+      "categories": "classic",
+      "badges": [
+        {
+          "style": "gold",
+          "label": "Classic"
+        },
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ]
+    },
+    {
+      "name": "Rainbow Sherbet",
+      "description": "A colorful trio of raspberry, orange, and lemon sherbet. Light, fruity, and refreshing.",
+      "image": "images/flavors/rainbow-sherbet.jpg",
+      "alt": "Rainbow Sherbet",
+      "categories": "fruit",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        }
+      ]
+    },
+    {
+      "name": "Rocky Road",
+      "description": "Chocolate ice cream loaded with soft marshmallows, whole cashews, and chocolate chips. A timeless crowd-pleaser.",
+      "image": "images/flavors/rocky-road.jpg",
+      "alt": "Rocky Road",
+      "categories": "classic chocolate",
+      "badges": [
+        {
+          "style": "gold",
+          "label": "Classic"
+        }
+      ],
+      "anchor": "rocky-road"
+    },
+    {
+      "name": "Salted Peanut Butter Oreo",
+      "description": "Salted peanut butter ice cream swirled with Oreo cookie pieces. Sweet, salty, crunchy — endlessly snackable.",
+      "image": "images/flavors/salted-pb-oreo.jpg",
+      "alt": "Salted Peanut Butter Oreo",
+      "categories": "nutty",
+      "badges": [
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ]
+    },
+    {
+      "name": "Triple Chocolate Brownie",
+      "description": "Triple chocolate intensity — chocolate ice cream, chocolate chips, and fudgy brownie bites throughout. For the true chocolate lover.",
+      "image": "images/flavors/triple-choco-brownie.jpg",
+      "alt": "Triple Chocolate Brownie",
+      "categories": "chocolate",
+      "badges": [
+        {
+          "style": "pint",
+          "label": "+Pints"
+        }
+      ],
+      "menuName": "Triple Choco Brownie"
+    },
+    {
+      "name": "Vicki's Mint Brownie",
+      "description": "Creamy mint ice cream packed with chewy fudgy brownie chunks. Cool, rich, and completely refreshing.",
+      "image": "images/flavors/mint-brownie.jpg",
+      "alt": "Vicki's Mint Brownie",
+      "categories": "chocolate",
+      "badges": [],
+      "menuName": "Mint Brownie"
+    },
+    {
+      "name": "Apple Pie a la Mode",
+      "description": "Apple pie ice cream seasoned with cinnamon and sprinkled with chunks of graham cracker pie crust.",
+      "image": "images/flavors/apple-pie-a-la-mode.webp",
+      "alt": "Apple Pie a la Mode",
+      "categories": "seasonal",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        },
+        {
+          "style": "seasonal",
+          "label": "Seasonal"
+        }
+      ]
+    },
+    {
+      "name": "Pumpkin Pie",
+      "description": "Creamy pumpkin spice ice cream swirled with warm cinnamon and nutmeg, packed with crunchy Biscoff cookie pieces for a buttery, spiced finish.",
+      "image": "images/flavors/pumpkin-pie.webp",
+      "alt": "Pumpkin Pie",
+      "categories": "seasonal",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        },
+        {
+          "style": "seasonal",
+          "label": "Seasonal"
+        }
+      ]
+    },
+    {
+      "name": "Coconut Horchata",
+      "description": "Dairy-free coconut horchata ice cream infused with cinnamon and vanilla, delivering a rich, refreshing twist on the classic Mexican favorite.",
+      "image": "images/flavors/coconut-horchata.webp",
+      "alt": "Coconut Horchata",
+      "categories": "seasonal",
+      "badges": [
+        {
+          "style": "red",
+          "label": "New"
+        },
+        {
+          "style": "dairyfree",
+          "label": "Dairy Free"
+        },
+        {
+          "style": "seasonal",
+          "label": "Seasonal"
+        }
+      ]
+    }
+  ],
+  "featured": [
+    {
+      "name": "Burnt Almond Fudge",
+      "description": "The flavor that built a legacy. Velvety chocolate fudge ice cream swirled with hand-toasted almonds.",
+      "image": "images/flavors/burnt-almond-fudge.jpg",
+      "alt": "Burnt Almond Fudge ice cream",
+      "initials": "BAF",
+      "badgeStyle": "gold",
+      "badgeLabel": "Classic"
+    },
+    {
+      "name": "Canadian Vanilla",
+      "description": "Laird Snelgrove's secret recipe from Canada. Impossibly rich, impossibly smooth. The gold standard of vanilla.",
+      "image": "images/flavors/canadian-vanilla.jpg",
+      "alt": "Canadian Vanilla ice cream",
+      "initials": "CV",
+      "badgeStyle": "gold",
+      "badgeLabel": "Classic"
+    },
+    {
+      "name": "Caramel Cashew",
+      "description": "Buttery caramel ice cream loaded with whole roasted cashews. Sweet, salty, and completely irresistible.",
+      "image": "images/flavors/caramel-cashew.jpg",
+      "alt": "Caramel Cashew ice cream",
+      "initials": "CC",
+      "badgeStyle": "brown",
+      "badgeLabel": "Fan Favorite"
+    },
+    {
+      "name": "Mint Brownie",
+      "description": "Cool peppermint ice cream layered with fudgy brownie pieces. Fresh, rich, and utterly indulgent.",
+      "image": "images/flavors/mint-brownie.jpg",
+      "alt": "Mint Brownie ice cream",
+      "initials": "MB",
+      "badgeStyle": "red",
+      "badgeLabel": "Fan Favorite"
+    }
+  ]
+}

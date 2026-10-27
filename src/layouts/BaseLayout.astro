@@ -16,7 +16,7 @@ const { title, head, body, bodyClass = '', chrome = true } = Astro.props;
 <body class:list={bodyClass || undefined}>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   {chrome && <SiteHeader />}
-  <Fragment set:html={body} />
+  {body ? <Fragment set:html={body} /> : <slot />}
   {chrome && <SiteFooter />}
   <script is:inline src="js/main.js"></script>
 </body>

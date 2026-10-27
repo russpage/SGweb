@@ -1,0 +1,64 @@
+</div><!-- /.flavors-full-grid -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script>
+    (function () {
+      const filterBtns    = document.querySelectorAll('.filter-btn');
+      const cards         = document.querySelectorAll('.flavor-card-full');
+      const seasonalSect  = document.getElementById('seasonal-section');
+      const flavorsGrid   = document.getElementById('flavors-grid');
+      const filterBar     = document.querySelector('.filter-bar');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.dataset.filter;
+
+          // Filter the main grid
+          cards.forEach(card => {
+            const cats = card.dataset.category || '';
+            card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+          });
+
+          // Show seasonal section only for "all" or "seasonal" filters
+          if (seasonalSect) {
+            seasonalSect.style.display = (filter === 'all' || filter === 'seasonal') ? '' : 'none';
+          }
+
+          // Smooth-scroll to the relevant section
+          const target = (filter === 'seasonal' && seasonalSect) ? seasonalSect : flavorsGrid;
+          if (target) {
+            const nav       = document.querySelector('.nav');
+            const navHeight = nav ? nav.offsetHeight : 80;
+            const barHeight = filterBar ? filterBar.offsetHeight : 0;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - barHeight - 24;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+  <style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.tag--pint{background:#DBEAFE;color:#1E40AF;font-size:0.65rem;font-weight:700;letter-spacing:.05em;}
+.flavor-card-full__img-wrap--no-img{background:linear-gradient(135deg,#F7D2DF22,#FCF0E4,#F4E6AC22);position:relative;}
+.flavor-card-full__img-wrap--no-img::after{content:'Photo Coming Soon';position:absolute;bottom:var(--space-3);left:50%;transform:translateX(-50%);font-size:0.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-cherry);opacity:.45;white-space:nowrap;}
+</style>
+<script>
+  document.querySelectorAll('.flavor-card-full__img').forEach(img => {
+    img.addEventListener('error', function() {
+      this.style.display = 'none';
+      this.closest('.flavor-card-full__img-wrap').classList.add('flavor-card-full__img-wrap--no-img');
+    });
+  });
+</script>

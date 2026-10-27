@@ -1,0 +1,13 @@
+---
+const { flavor, delay } = Astro.props;
+---
+<article class="seasonal-card" data-animate="fade-up" data-delay={delay}>
+  <div class="seasonal-card__img-wrap">
+    <img src={flavor.image} alt={flavor.name} class="seasonal-card__img" onerror="this.style.display='none'">
+    <span class="seasonal-card__tag">{flavor.tag}</span>
+  </div>
+  <div class="seasonal-card__body">
+    <h3 class="seasonal-card__name">{flavor.name}</h3>
+    <p class="seasonal-card__desc">{flavor.description}</p>
+  </div>
+</article>

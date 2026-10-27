@@ -1,6 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SeasonalCard from '../components/flavors/SeasonalCard.astro';
+import FlavorCardFull from '../components/flavors/FlavorCardFull.astro';
 import head from '../fragments/head-flavors.html?raw';
-import body from '../fragments/body-flavors.html?raw';
+import preRaw from '../fragments/body-flavors-pre.html?raw';
+import mid from '../fragments/body-flavors-mid.html?raw';
+import post from '../fragments/body-flavors-post.html?raw';
+import data from '../data/flavors.json';
+const pre = preRaw.replace('__SEASONAL_LABEL__', data.seasonal.label);
 ---
-<BaseLayout title={`Flavors — Snelgrove Ice Cream`} head={head} body={body} bodyClass={``} />
+<BaseLayout title={`Flavors — Snelgrove Ice Cream`} head={head} bodyClass={``}>
+  <Fragment set:html={pre} />
+  {data.seasonal.flavors.map((f, i) => <SeasonalCard flavor={f} delay={((i % 3) + 1) * 100} />)}
+  <Fragment set:html={mid} />
+  {data.scoops.map((f, i) => <FlavorCardFull flavor={f} delay={((i % 3) + 1) * 100} />)}
+  <Fragment set:html={post} />
+</BaseLayout>
