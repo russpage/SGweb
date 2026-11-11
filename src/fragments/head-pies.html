@@ -1,0 +1,36 @@
+<meta name="description" content="Snelgrove Ice Cream Pies — pumpkin, apple pie à la mode, triple chocolate, Brigham City peach, or build your own. $35, made fresh for pickup at your Snelgrove shop.">
+  <meta property="og:title" content="Ice Cream Pies — Snelgrove Ice Cream">
+  <meta property="og:description" content="Your favorite Snelgrove flavors in a graham cracker crust, finished with whipped cream. Order 48 business hours ahead for pickup.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.snelgroveicecream.com/pies">
+  <meta property="og:image" content="https://www.snelgroveicecream.com/images/pies/pie-lineup.webp">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .pies-hero{background:var(--color-blueberry);color:var(--color-white);text-align:center;padding-block:var(--space-16);}
+    .pies-hero__script{font-family:var(--font-script);font-size:var(--text-3xl);color:var(--color-banana-split);display:block;margin-bottom:var(--space-2);}
+    .pies-hero__title{font-family:var(--font-display);font-weight:900;font-size:clamp(var(--text-4xl),6vw,var(--text-6xl));margin:0 0 var(--space-4);color:var(--color-white);}
+    .pies-hero__sub{max-width:58ch;margin:0 auto;color:rgba(255,255,255,.95);font-size:var(--text-lg);line-height:1.7;}
+    .pies-ribbon{background:var(--color-cherry);color:var(--color-white);text-align:center;padding:var(--space-3) var(--space-4);font-weight:700;}
+    .pies-ribbon u{text-decoration-color:var(--color-banana-split);text-underline-offset:3px;}
+    .pies-list{background:var(--color-vanilla);padding-block:var(--space-16);}
+    .pie-row{display:flex;gap:var(--space-8);align-items:center;background:var(--color-white);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);padding:var(--space-6) var(--space-8);max-width:900px;margin:0 auto var(--space-6);}
+    .pie-row--flip{flex-direction:row-reverse;}
+    .pie-row__photo{width:200px;height:200px;border-radius:50%;object-fit:cover;flex-shrink:0;border:6px solid var(--color-candy-pink);background:var(--color-melted);}
+    .pie-row__name{font-family:var(--font-display);font-weight:900;color:var(--color-blueberry);font-size:var(--text-2xl);margin:0 0 var(--space-2);display:flex;gap:var(--space-3);align-items:center;flex-wrap:wrap;}
+    .pie-row__price{background:var(--color-banana-split);color:var(--color-blueberry);font-size:var(--text-base);padding:2px var(--space-3);border-radius:var(--radius-full);}
+    .pie-row__desc{color:var(--color-text-mid);line-height:1.65;margin:0 0 var(--space-4);}
+    .pie-row__order{display:flex;gap:var(--space-2);flex-wrap:wrap;align-items:center;}
+    .pie-row__order-label{font-weight:700;color:var(--color-blueberry);}
+    .order-chip{border:2px solid var(--color-cherry);color:var(--color-cherry);font-weight:700;font-size:var(--text-sm);padding:var(--space-1) var(--space-3);border-radius:var(--radius-full);transition:background-color var(--transition-fast),color var(--transition-fast);}
+    .order-chip:hover,.order-chip:focus-visible{background:var(--color-cherry);color:var(--color-white);}
+    .pies-foot{max-width:900px;margin:var(--space-4) auto 0;text-align:center;color:var(--color-text-mid);font-style:italic;font-size:var(--text-sm);}
+    @media(max-width:760px){
+      .pie-row,.pie-row--flip{flex-direction:column;text-align:center;padding:var(--space-6);}
+      .pie-row__order{justify-content:center;}
+    }
+  </style>
