@@ -89,6 +89,20 @@
   flex-shrink: 0;
 }
 
+@media (min-width: 901px) and (max-width: 1150px) {
+  .nav__logo img.nav__badge {
+    height: 36px;
+  }
+
+  .nav__inner {
+    gap: var(--space-4);
+  }
+
+  .nav__links {
+    gap: var(--space-4);
+  }
+}
+
 @media (max-width: 900px) {
   .nav__logo img.nav__badge {
     height: 38px;
@@ -110,6 +124,7 @@
 .nav__link {
   font-family: var(--font-body);
   font-size: var(--text-sm);
+  white-space: nowrap;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
