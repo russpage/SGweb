@@ -87,11 +87,19 @@
   height: 46px;
   width: auto;
   flex-shrink: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 900px) {
+  .nav__badge {
+    height: 38px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 520px) {
   .nav__badge {
-    display: none;
+    height: 32px;
   }
 }
 
