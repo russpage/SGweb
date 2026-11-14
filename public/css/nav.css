@@ -83,6 +83,18 @@
   color: var(--color-text-mid);
 }
 
+.nav__badge {
+  height: 46px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 520px) {
+  .nav__badge {
+    display: none;
+  }
+}
+
 .nav__links {
   display: flex;
   align-items: center;
